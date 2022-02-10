@@ -1,0 +1,94 @@
+@import '@csstools/normalize.css';
+
+@font-face {
+  font-weight: 400;
+  font-family: 'Doid Sans';
+  font-style: normal;
+
+  font-display: swap;
+  src: local('Droid Sans'),
+  url('../../assets/fonts/droid-sans-regular.woff2'),
+  url('../../assets/fonts/droid-sans-regular.woff');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Doid Sans';
+  font-style: normal;
+
+  font-display: swap;
+  src: local('Droid Sans'),
+  url('../../assets/fonts/droid-sans-bold.woff2'),
+  url('../../assets/fonts/droid-sans-bold.woff');
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1024px;
+  height: 100vh;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-weight: normal;
+  font-family: 'Droid Sans', 'Arial', sans-serif;
+  font-style: normal;
+
+  > div {
+    display: grid;
+    min-height: 100vh;
+
+    grid-template-rows: auto 1fr auto;
+  }
+}
+
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+
+  color: #000000;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
