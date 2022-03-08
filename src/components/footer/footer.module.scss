@@ -1,0 +1,32 @@
+.footer__decor {
+  position: relative;
+
+  height: 79px;
+
+  background-image: url('../../assets/img/footer-guitar.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+
+    width: 100%;
+    height: 6px;
+
+    background-color: #3f3f3f;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  padding-top: 61px;
+  padding-bottom: 63px;
+
+  background-color: #3f3f3f;
+}
+
+.footer__logo {
+  margin-right: 39px;
+}

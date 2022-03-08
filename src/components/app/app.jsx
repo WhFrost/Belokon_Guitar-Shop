@@ -1,5 +1,4 @@
 import React from 'react';
-import globalStyles from './app.module.scss';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {AppRoute} from '../../const';
 import Catalog from '../pages/catalog';

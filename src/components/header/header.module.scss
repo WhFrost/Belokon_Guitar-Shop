@@ -1,0 +1,66 @@
+.header {
+  position: relative;
+}
+
+.header__wrapper {
+  background-color: rgba(30, 9, 6, 0.15);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header__decor {
+  z-index: 2;
+
+  height: 288px;
+  margin-top: -40px;
+
+  background-image: url('../../assets/img/header-guitar.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.header::before,
+.header::after,
+.header__decor::before,
+.header__decor::after,
+.header__decor-line::before,
+.header__decor-line::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+
+  background-color: #3f3f3f;
+}
+
+.header::before {
+  bottom: 164px;
+}
+
+.header::after {
+  bottom: 150px;
+}
+
+.header__decor::before {
+  bottom: 192px;
+}
+
+.header__decor::after {
+  bottom: 178px;
+}
+
+.header__decor-line::before {
+  bottom: 220px;
+}
+
+.header__decor-line::after {
+  bottom: 206px;
+}

@@ -1,0 +1,27 @@
+.site-nav {
+  display: flex;
+}
+
+.site-nav__item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.site-nav__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'Droid Sans', 'Arial', sans-serif;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: 0.05em;;
+
+  &:hover,
+  &:focus {
+    color: #474747;
+  }
+  &:active {
+    color: rgba(71, 71, 71, 0.5);
+  }
+}
