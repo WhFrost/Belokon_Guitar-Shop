@@ -1,6 +1,6 @@
 .filters {
   max-width: 208px;
-  margin-right: 32px;
+  margin-right: 20px;
 
   grid-row-end: 4;
   grid-row-start: 2;
@@ -148,8 +148,7 @@
   background-position: center;
 }
 
-.filters__checkbox-input:hover ~ .filters__form-label::before,
-.filters__checkbox-input:focus ~ .filters__form-label::before {
+.filters__checkbox-input:hover ~ .filters__form-label::before {
   border-color: #585757;
 }
 

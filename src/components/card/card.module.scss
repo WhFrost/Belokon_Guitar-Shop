@@ -1,15 +1,10 @@
 .card {
-  margin-bottom: 20px;
   padding-top: 16px;
   padding-right: 14px;
   padding-bottom: 20px;
   padding-left: 14px;
 
   border: 1px solid #dddada;
-
-  &:not(:nth-child(3n)) {
-    margin-right: 20px;
-  }
 }
 
 .card__wrapper {
@@ -24,7 +19,6 @@
 
 .card__rating-wrapper {
   display: flex;
-  margin-bottom: 5px;
 }
 
 .card__rating {
@@ -52,7 +46,7 @@
 .card__title-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .card__title,
@@ -85,4 +79,12 @@
 
   background-color: #c1c1c1;
   border-radius: 2px;
+
+  &:hover {
+    background-color: #585757;
+  }
+
+  &:active {
+    background-color: #9f9e9e;
+  }
 }

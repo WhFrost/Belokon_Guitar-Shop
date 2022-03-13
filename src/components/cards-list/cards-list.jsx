@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './cards-list.module.scss';
 import {nanoid} from 'nanoid';
 import Card from '../card/card';
-import {productProp} from '../props-validation/product';
+import ProductProp from '../props-validation/product';
 
 function CardsList (props) {
   const {productList} = props;
@@ -18,7 +18,7 @@ function CardsList (props) {
 }
 
 CardsList.propTypes = {
-  productList: PropTypes.arrayOf(productProp),
+  productList: PropTypes.arrayOf(ProductProp),
 };
 
 export default CardsList;

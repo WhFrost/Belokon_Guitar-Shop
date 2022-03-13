@@ -17,8 +17,7 @@
 }
 
 .user-nav__icon {
-  &:hover path,
-  &:focus path {
+  &:hover path {
     stroke: #474747;
   }
   &:active path {

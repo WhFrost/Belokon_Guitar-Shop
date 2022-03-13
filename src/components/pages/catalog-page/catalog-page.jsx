@@ -1,6 +1,6 @@
 import React from 'react';
 import globalStyles from '../../app/app.module.scss';
-import styles from './catalog.module.scss';
+import styles from './catalog-page.module.scss';
 import Header from '../../header/header';
 import BreadCrumbs from '../../breadcrumbs/breadcrumbs';
 import Filters from '../../filters/filters';
@@ -10,14 +10,14 @@ import Pagination from '../../pagination/pagination';
 import Footer from '../../footer/footer';
 import {GuitarsList} from '../../../mock/guitars';
 
-function Catalog () {
+function CatalogPage () {
   return (
     <>
       <Header />
-      <main className={styles['main']}>
-        <div className={`${globalStyles['container']} ${styles['main__wrapper']}`}>
-          <div className={styles['main__title-wrapper']}>
-            <h1 className={`${globalStyles['title']} ${styles['main__title']}`}>Каталог гитар</h1>
+      <main className={styles['catalog-main']}>
+        <div className={`${globalStyles['container']} ${styles['catalog-main__wrapper']}`}>
+          <div className={styles['catalog-main__title-wrapper']}>
+            <h1 className={`${globalStyles['title']} ${styles['catalog-main__title']}`}>Каталог гитар</h1>
             <BreadCrumbs />
           </div>
           <Filters />
@@ -31,4 +31,4 @@ function Catalog () {
   );
 }
 
-export default Catalog;
+export default CatalogPage;

@@ -1,0 +1,99 @@
+.product-in-cart__wrapper {
+  display: grid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  grid-template-columns: 4.8% 12.4% 37.7% 17.6% 11.7% 15.8%;
+}
+
+.product-in-cart__title {
+  margin: 0;
+  margin-bottom: 14px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 15px;
+  text-align: left;
+  letter-spacing: 0.05em;
+}
+
+.product-in-cart__info {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: left;
+  letter-spacing: 0.05em;
+
+  &:not(:last-child) {
+    margin-bottom: 7px;
+  }
+}
+
+.product-in-cart__cost {
+  align-self: center;
+  margin: 0;
+  margin-top: 7px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+}
+
+.product-in-cart__button-wrapper {
+  display: flex;
+  padding-top: 21px;
+  padding-left: 8px;
+}
+
+.product-in-cart__count-product {
+  width: 28px;
+  height: 30px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  text-align: center;
+  color: #9f9e9e;
+  font-style: normal;
+  letter-spacing: 0.05em;
+
+  background-color: transparent;
+  border: 1px solid #9f9e9e;
+
+  -moz-appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    margin: 0;
+
+    -webkit-appearance: none;
+  }
+
+  &:hover {
+    color: #585757;
+
+    border-color: #585757;
+  }
+
+  &:active {
+    color: #000000;
+
+    border-color: #000000;
+  }
+}
+
+.product-in-cart__sum-count-products {
+  align-self: center;
+  margin: 0;
+  margin-left: auto;
+  padding-top: 7px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+}

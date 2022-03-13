@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const productProp = PropTypes.shape({
+const ProductProp = PropTypes.shape({
   id: PropTypes.string,
   name: PropTypes.string,
   type: PropTypes.string,
@@ -12,6 +12,4 @@ const productProp = PropTypes.shape({
   imageRetina: PropTypes.string,
 });
 
-export {
-  productProp
-};
+export default ProductProp;

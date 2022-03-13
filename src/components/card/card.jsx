@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import globalStyles from '../app/app.module.scss';
 import styles from './card.module.scss';
 import Button from '../button/button';
-import {productProp} from '../props-validation/product';
+import ProductProp from '../props-validation/product';
 
 function Card (props) {
   const {product} = props;
@@ -52,7 +52,7 @@ function Card (props) {
 }
 
 Card.propTypes = {
-  product: productProp,
+  product: ProductProp,
 };
 
 export default Card;

@@ -1,17 +1,17 @@
-.main__wrapper {
+.catalog-main__wrapper {
   display: grid;
   margin-bottom: 60px;
 
   grid-template-columns: repeat(3, auto);
 }
 
-.main__title-wrapper {
+.catalog-main__title-wrapper {
   margin-bottom: 50px;
 
   grid-column: span 3;
 }
 
-.main__title {
+.catalog-main__title {
   margin-top: -35px;
   margin-bottom: 20px;
 
