@@ -1,9 +1,9 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {AppRoute} from '../../const';
-import Catalog from '../pages/catalog';
-import Cart from '../pages/cart';
-import PageNotFound from '../pages/404';
+import Catalog from '../pages/catalog/catalog';
+import Cart from '../pages/cart/cart';
+import PageNotFound from '../pages/page-not-found/page-not-found';
 
 function App () {
   return (

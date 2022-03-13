@@ -12,12 +12,14 @@ import {
 function Header () {
   return (
     <header className={styles['header']}>
-      <div className={`${globalStyles['container']} ${styles['header__wrapper']}`}>
-        <nav className={styles['header__nav']}>
-          <Logo />
-          <SiteNav siteMenuItems={HEADER_NAV_MENU_ITEMS}/>
-          <UserNav userMenuItems={HEADER_USER_MENU_ITEMS}/>
-        </nav>
+      <div className={styles['header__content']}>
+        <div className={`${globalStyles['container']} ${styles['header__wrapper']}`}>
+          <nav className={styles['header__nav']}>
+            <Logo />
+            <SiteNav siteMenuItems={HEADER_NAV_MENU_ITEMS}/>
+            <UserNav userMenuItems={HEADER_USER_MENU_ITEMS}/>
+          </nav>
+        </div>
       </div>
       <div className={styles['header__decor']}></div>
       <div className={styles['header__decor-line']}></div>

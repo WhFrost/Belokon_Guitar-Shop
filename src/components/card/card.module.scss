@@ -1,0 +1,88 @@
+.card {
+  margin-bottom: 20px;
+  padding-top: 16px;
+  padding-right: 14px;
+  padding-bottom: 20px;
+  padding-left: 14px;
+
+  border: 1px solid #dddada;
+
+  &:not(:nth-child(3n)) {
+    margin-right: 20px;
+  }
+}
+
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__image {
+  align-self: center;
+  margin-bottom: 8px;
+}
+
+.card__rating-wrapper {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.card__rating {
+  position: relative;
+
+  width: 70px;
+  height: 14px;
+  margin-right: 3px;
+
+  background-color: transparent;
+  background-image: url('../../assets/img/icon-star-empty.svg');
+  background-repeat: repeat-x;
+}
+
+.card__reviews {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  color: #9f9e9e;
+  font-style: normal;
+  letter-spacing: 0.1em;
+}
+
+.card__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.card__title,
+.card__cost {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: 0.05em;
+}
+
+.card__buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__link {
+  margin-right: 16px;
+  padding-top: 5px;
+  padding-right: 9px;
+  padding-bottom: 5px;
+  padding-left: 9px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+
+  background-color: #c1c1c1;
+  border-radius: 2px;
+}

@@ -16,15 +16,17 @@ function Footer () {
   return (
     <footer className={styles['footer']}>
       <div className={styles['footer__decor']}></div>
-      <div className={`${globalStyles['container']} ${styles['footer__wrapper']}`}>
-        <div className={styles['footer__logo']}>
-          <Logo footer />
-          <Social socialLinks={FOOTER_SOCIALS}/>
+      <div className={styles['footer__content']}>
+        <div className={`${globalStyles['container']} ${styles['footer__wrapper']}`}>
+          <div className={styles['footer__logo']}>
+            <Logo footer />
+            <Social socialLinks={FOOTER_SOCIALS}/>
+          </div>
+          <About />
+          <FooterNav title='Каталог' footerMenuItems={FOOTER_NAV_CATALOG} />
+          <FooterNav title='Информация' footerMenuItems={FOOTER_NAV_INFO} />
+          <Contacts />
         </div>
-        <About />
-        <FooterNav title='Каталог' footerMenuItems={FOOTER_NAV_CATALOG} />
-        <FooterNav title='Информация' footerMenuItems={FOOTER_NAV_INFO} />
-        <Contacts />
       </div>
     </footer>
   );

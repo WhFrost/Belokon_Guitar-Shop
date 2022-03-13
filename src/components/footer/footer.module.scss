@@ -19,12 +19,14 @@
   }
 }
 
+.footer__content {
+  background-color: #3f3f3f;
+}
+
 .footer__wrapper {
   display: flex;
   padding-top: 61px;
   padding-bottom: 63px;
-
-  background-color: #3f3f3f;
 }
 
 .footer__logo {

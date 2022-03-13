@@ -1,0 +1,19 @@
+.sort {
+  margin-bottom: 30px;
+
+  grid-column-end: 4;
+  grid-column-start: 2;
+}
+
+.sort__wrapper {
+  display: flex;
+}
+
+.sort__title {
+  margin-right: 26px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+}

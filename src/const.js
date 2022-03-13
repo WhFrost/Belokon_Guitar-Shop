@@ -1,7 +1,13 @@
 const AppRoute = {
   ROOT: '/',
   CATALOG: '/catalog',
-  CART: '/cart',
+  CART: '/catalog/cart',
+};
+
+const BREADCRUMBS = {
+  '/': 'Главная',
+  '/catalog': 'Каталог',
+  '/catalog/cart': 'Оформляем',
 };
 
 const HEADER_NAV_MENU_ITEMS = [
@@ -105,11 +111,57 @@ const FOOTER_NAV_INFO = [
   },
 ];
 
+const GUITAR_TYPES = {
+  electro: 'Электрогитара',
+  acoustic: 'Акустическая гитара',
+  ukulele: 'Укулеле',
+};
+
+const FILTER_GUITAR_TYPES = [
+  {
+    type: 'acoustic',
+    label: 'Акустические гитары',
+  },
+  {
+    type: 'electro',
+    label: 'Электрогитары',
+  },
+  {
+    type: 'ukulele',
+    label: 'Укулеле',
+  },
+];
+const FILTER_GUITAR_COUNT_STRINGS = [
+  {
+    count: 4,
+    label: '4',
+  },
+  {
+    count: 6,
+    label: '6',
+  },
+  {
+    count: 7,
+    label: '7',
+  },
+  {
+    count: 12,
+    label: '12',
+  },
+];
+
+const CARDS_ON_PAGE = 9;
+
 export {
   AppRoute,
+  BREADCRUMBS,
   HEADER_NAV_MENU_ITEMS,
   HEADER_USER_MENU_ITEMS,
   FOOTER_SOCIALS,
   FOOTER_NAV_CATALOG,
-  FOOTER_NAV_INFO
+  FOOTER_NAV_INFO,
+  GUITAR_TYPES,
+  FILTER_GUITAR_TYPES,
+  FILTER_GUITAR_COUNT_STRINGS,
+  CARDS_ON_PAGE
 };

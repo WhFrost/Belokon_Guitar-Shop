@@ -1,0 +1,17 @@
+.pagination {
+  padding-top: 6px;
+
+  grid-column-end: 4;
+  grid-column-start: 3;
+}
+
+.pagination__list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
