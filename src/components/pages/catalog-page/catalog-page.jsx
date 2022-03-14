@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import PropTypes from 'prop-types';
+import {connect} from 'react-redux';
 import globalStyles from '../../app/app.module.scss';
 import styles from './catalog-page.module.scss';
 import Header from '../../header/header';
@@ -9,8 +11,26 @@ import CardsList from '../../cards-list/cards-list';
 import Pagination from '../../pagination/pagination';
 import Footer from '../../footer/footer';
 import {GuitarsList} from '../../../mock/guitars';
+import {ActionCreator} from '../../../store/actions';
+import {
+  getProducts,
+  getProductsLoadedStatus
+} from '../../../store/products/selectors';
+import ProductProp from '../../props-validation/product';
 
-function CatalogPage () {
+function CatalogPage (props) {
+  const {
+    products,
+    isProductsLoaded,
+    loadProducts,
+  } = props;
+
+  useEffect(() => {
+    if (!isProductsLoaded) {
+      loadProducts(GuitarsList);
+    }
+  }, [isProductsLoaded, loadProducts]);
+
   return (
     <>
       <Header />
@@ -22,7 +42,7 @@ function CatalogPage () {
           </div>
           <Filters />
           <Sort />
-          <CardsList productList={GuitarsList}/>
+          <CardsList productList={products}/>
           <Pagination />
         </div>
       </main>
@@ -31,4 +51,21 @@ function CatalogPage () {
   );
 }
 
-export default CatalogPage;
+CatalogPage.propTypes = {
+  products: PropTypes.arrayOf(ProductProp),
+  isProductsLoaded: PropTypes.bool,
+  loadProducts: PropTypes.func,
+};
+
+const mapStateToProps = (state) => ({
+  products: getProducts(state),
+  isProductsLoaded: getProductsLoadedStatus(state),
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  loadProducts (products) {
+    dispatch(ActionCreator.loadProducts(products));
+  }
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(CatalogPage);
